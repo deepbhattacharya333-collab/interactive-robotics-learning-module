@@ -48,5 +48,5 @@ The Figma design includes:
 The design helped in building a clean layout while coding.
 
 
-## 📁 Folder Structure
+
 
