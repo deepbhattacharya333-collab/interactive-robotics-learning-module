@@ -2,11 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Robotics Quiz</title>
+    <script src="app.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Let's Get Started</h1>
-    <h2>some facts abouts robotics</h2>
+
+    <div class="quiz-container">
+        <h1>Robotics Quiz</h1>
+
+        
+        <div class="question" id="question">
+            What does an ultrasonic sensor measure?
+        </div>
+
+        
+        <div class="options">
+            <label>
+                <input type="radio" name="answer" value="a">
+                Temperature
+            </label>
+
+            <label>
+                <input type="radio" name="answer" value="b">
+                Distance
+            </label>
+
+            <label>
+                <input type="radio" name="answer" value="c">
+                Light intensity
+            </label>
+
+            <label>
+                <input type="radio" name="answer" value="d">
+                Sound volume
+            </label>
+        </div>
+
+        <!-- Button -->
+        <button onclick="checkAnswer()">Submit</button>
+
+        <!-- Result -->
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- Link JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
