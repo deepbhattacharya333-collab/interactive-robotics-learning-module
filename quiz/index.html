@@ -3,52 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Robotics Quiz</title>
-    <script src="app.js"></script>
-
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="quiz-container">
+
         <h1>Robotics Quiz</h1>
+        <p class="subtitle">Test your basic knowledge of robotics</p>
 
-        
-        <div class="question" id="question">
-            What does an ultrasonic sensor measure?
+        <div class="question-box">
+            <p id="question">Question text</p>
         </div>
 
-        
         <div class="options">
-            <label>
-                <input type="radio" name="answer" value="a">
-                Temperature
-            </label>
-
-            <label>
-                <input type="radio" name="answer" value="b">
-                Distance
-            </label>
-
-            <label>
-                <input type="radio" name="answer" value="c">
-                Light intensity
-            </label>
-
-            <label>
-                <input type="radio" name="answer" value="d">
-                Sound volume
-            </label>
+            <label><input type="radio" name="answer" value="a"> <span id="optionA"></span></label>
+            <label><input type="radio" name="answer" value="b"> <span id="optionB"></span></label>
+            <label><input type="radio" name="answer" value="c"> <span id="optionC"></span></label>
+            <label><input type="radio" name="answer" value="d"> <span id="optionD"></span></label>
         </div>
 
-        <!-- Button -->
-        <button onclick="checkAnswer()">Submit</button>
+        <div class="buttons">
+            <button onclick="checkAnswer()">Submit</button>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
 
-        <!-- Result -->
-        <div class="result" id="result"></div>
+        <p id="result" class="result"></p>
+
     </div>
 
-    <!-- Link JavaScript file -->
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
