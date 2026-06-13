@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-container">
+
+    <h1>Quiz Progress</h1>
+    <p class="info">Your performance summary</p>
+
+    
+    <p>Total Questions: <span id="total">0</span></p>
+    <p>Correct Answers: <span id="score">0</span></p>
+    <p>Percentage: <span id="percentage">0</span>%</p>
+
+    
+    <div class="progress-bar">
+        <div id="progress-fill"></div>
+    </div>
+
+    <button onclick="restartQuiz()">Restart Quiz</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

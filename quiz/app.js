@@ -34,12 +34,11 @@ let questions = [
     }
 ];
 
-// ---------------- VARIABLES ----------------
 let questionIndex = 0;
 let score = 0;
 let answered = false;
 
-// ---------------- LOAD QUESTION ----------------
+
 function loadQuestion() {
 
     document.getElementById("question").innerText =
@@ -66,7 +65,7 @@ function loadQuestion() {
     answered = false;
 }
 
-// ---------------- CHECK ANSWER ----------------
+
 function checkAnswer() {
 
     let selectedAnswer = "";
@@ -98,7 +97,7 @@ function checkAnswer() {
     answered = true;
 }
 
-// ---------------- NEXT QUESTION ----------------
+
 function nextQuestion() {
 
     if (answered === false) {
@@ -116,7 +115,8 @@ function nextQuestion() {
             "<h2>Quiz Finished</h2>" +
             "<p>Your Score: " + score + " / " + questions.length + "</p>";
     }
-}
+}  
+
 
 // ---------------- START QUIZ ----------------
 loadQuestion();
